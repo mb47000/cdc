@@ -3,44 +3,9 @@
 // import scss bootstrap
 @import "../vendor/bootstrap/scss/bootstrap.scss";
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  height: 100%;
-  background-image: url(../images/bg1.jpg);
-  background-attachment: fixed;
-  z-index: 1000;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-// Main page wrapper
-#wrapper {
-  display: flex;
-
-  #content-wrapper {
-    // background-color: $gray-100;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-
-    #content {
-      flex: 1 0 auto;
-    }
-  }
-}
-
-.table {
-  background-color: rgba($color: #000000, $alpha: 0.5);
-}
 
 
 // import des elements créer
 @import "background";
-@import "nav.scss";
 @import "footer.scss";
 @import "animation_ndm.scss";
