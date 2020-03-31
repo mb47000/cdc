@@ -1,0 +1,38 @@
+{
+  "name": "cdc",
+  "version": "1.0.0",
+  "description": "Projet AFPA HTML CSS PHP SQL 31/03/2020",
+  "email": "mbweb47@gmail.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mb47000/cdc.git"
+  },
+  "author": "Michel Brousse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mb47000/cdc/issues"
+  },
+  "homepage": "https://github.com/mb47000/cdc#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@popperjs/core": "^2.1.1",
+    "bootstrap": "^4.4.1",
+    "del": "^5.1.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-header": "^2.0.9",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "jquery": "^3.4.1",
+    "merge-stream": "^2.0.0",
+    "popper.js": "^1.16.1"
+  }
+}
