@@ -2,7 +2,7 @@
 require($indexRootPath . 'view/user/INC/header.inc.php');
 ?>
 
-<div class="content">
+<div class="main" id="content">
     <?php
         require($indexRootPath . 'view/user/' . $content);
     ?>

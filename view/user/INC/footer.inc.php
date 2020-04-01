@@ -1,4 +1,4 @@
-<footer class="sticky-footer border-top">
+<footer class="sticky-footer">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
             <span>Copyright &copy; NDM CONSTRUCTION 2020</span>
