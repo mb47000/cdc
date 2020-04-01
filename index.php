@@ -20,7 +20,7 @@ require('controller/userController.php');
             }
 
         } elseif (isset($_POST['userAction']) && !empty($_POST['userAction'])) {
-            //post form
+            formToMail();
         }
     } else {
         homePage();

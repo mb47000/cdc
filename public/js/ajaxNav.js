@@ -13,7 +13,6 @@ $(function () {
             },
             dataType: "html",
             success: function (response) {
-                console.log(response);
                 $('body').css('overflow-y', 'hidden');
                 $('#content').removeClass('fadeInUP animated faster').addClass('fadeOutDown animated faster').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
                     $("#content").html(response);

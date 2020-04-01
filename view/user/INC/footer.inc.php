@@ -10,6 +10,7 @@
 <script src="<?= $mainFolderPath ?>vendor/jquery/jquery.min.js"></script>
 <script src="<?= $mainFolderPath ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="<?= $mainFolderPath ?>public/js/ajaxNav.js"></script>
+<script src="<?= $mainFolderPath ?>public/js/contact.js"></script>
 
 
 </body>
