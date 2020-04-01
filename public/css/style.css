@@ -9728,24 +9728,6 @@ p {
   font-size: 1em;
 }
 
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-
-.video-container iframe,
-.video-container object,
-.video-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .bg-header-footer {
   background-color: #00c6bb;
 }
@@ -9767,4 +9749,26 @@ footer.sticky-footer {
 .nav-link.active {
   background-color: #0ebbb2;
   font-weight: bold;
+}
+
+iframe {
+  border: none;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
