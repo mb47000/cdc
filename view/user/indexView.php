@@ -1,3 +1,7 @@
-<h1>hello</h1><br />
-<h2>hrllo</h2><br />
-<p>un jolie paragraphe</p>
+<?php
+$text = $textRequest->fetch(PDO::FETCH_ASSOC);
+?>
+
+<p class="m-4">
+    <?=  $text['cdc_text']; ?>
+</p>

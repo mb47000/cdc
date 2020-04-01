@@ -7,10 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><?= $title ?></title>
-    <!-- Custom fonts for this template-->
     <link href="<?= $mainFolderPath ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <!-- Custom styles for this template-->
     <link id="mainStyle1" rel="stylesheet" href="<?= $mainFolderPath ?>public/css/style.min.css">
     <link id="mainStyle" rel="stylesheet" href="<?= $mainFolderPath ?>public/css/animate.css">
 

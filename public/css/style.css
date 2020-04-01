@@ -9728,6 +9728,24 @@ p {
   font-size: 1em;
 }
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .bg-header-footer {
   background-color: #00c6bb;
 }
@@ -9739,87 +9757,11 @@ p {
 footer.sticky-footer {
   flex-shrink: none;
   color: #212121;
+  z-index: 1;
 }
 
 .main {
   flex: 1 0 auto;
-}
-
-@-webkit-keyframes client-anim {
-  10% {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  25% {
-    opacity: 1;
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-  35% {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  45% {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  50% {
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-  60% {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  70% {
-    opacity: 1;
-    transform: scale3d(1.03, 1.03, 1.03);
-  }
-  80% {
-    transform: scale3d(0.97, 0.97, 0.97);
-  }
-  to {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes client-anim {
-  10% {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  25% {
-    opacity: 1;
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-  35% {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  45% {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  50% {
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-  60% {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-  70% {
-    opacity: 1;
-    transform: scale3d(1.03, 1.03, 1.03);
-  }
-  80% {
-    transform: scale3d(0.97, 0.97, 0.97);
-  }
-  to {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-.client-anim {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-name: client-anim;
-  animation-name: client-anim;
 }
 
 .nav-link.active {

@@ -1,5 +1,8 @@
 <?php
 
+require($indexRootPath . 'model/model.php');
+
+
 function homePage()
 {
     global $indexRootPath;
@@ -8,11 +11,24 @@ function homePage()
     $title = 'Accueil';
     $content = 'indexView.php';
 
+    $textRequest = text();
     require($indexRootPath . 'view/user/template.php');
 }
 
 function indexContent()
 {
     global $indexRootPath;
+
+    $textRequest = text();
     require($indexRootPath . 'view/user/indexView.php');
+}
+
+function mediasContent() {
+    global $indexRootPath;
+
+    require($indexRootPath . 'view/user/mediasView.php');
+}
+
+function contactContent() {
+
 }

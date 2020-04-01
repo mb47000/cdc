@@ -9,7 +9,7 @@ require('controller/userController.php');
             
             switch ($_POST['navSection']) {
                 case 'Médias':
-                    // page media
+                    mediasContent();
                     break;
                 case 'Contact':
                     // contact media

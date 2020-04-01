@@ -4,7 +4,7 @@ $(function () {
 
         $(".nav-link").removeClass('active');
         $(this).addClass('active');
-
+        document.title = this.textContent;
         $.ajax({
             type: "POST",
             url: "index.php",
@@ -19,7 +19,7 @@ $(function () {
                     $("#content").html(response);
                     $('#content').removeClass('fadeOutDown animated faster').addClass('fadeInUp animated faster').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
                         $(this).removeClass('fadeInUp animated faster');
-                        $('body').css('overflow-y', 'auto');
+                        $('body').css('overflow-y', 'auto');  
                     });
                 });
             }
