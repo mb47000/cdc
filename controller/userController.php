@@ -30,5 +30,7 @@ function mediasContent() {
 }
 
 function contactContent() {
-
+    global $indexRootPath;
+    require_once($indexRootPath . 'controller/DataValider.php');
+    require($indexRootPath . 'view/user/contactView.php');
 }

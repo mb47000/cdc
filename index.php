@@ -12,7 +12,7 @@ require('controller/userController.php');
                     mediasContent();
                     break;
                 case 'Contact':
-                    // contact media
+                    contactContent();
                     break;
 
                 default:
