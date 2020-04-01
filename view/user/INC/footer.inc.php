@@ -1,16 +1,16 @@
-<footer class="sticky-footer">
-    <div class="container my-auto">
-        <div class="copyright text-center my-auto">
-            <span>Copyright &copy; NDM CONSTRUCTION 2020</span>
+<footer class="sticky-footer bg-header-footer">
+    <div class="container my-auto p-3">
+        <div class="text-right">
+            <span>Date de réalisation : 01/04/2020 | Michel BROUSSE</span>
         </div>
     </div>
 </footer>
+</div>
 
 <script src="<?= $mainFolderPath ?>vendor/jquery/jquery.min.js"></script>
 <script src="<?= $mainFolderPath ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="<?= $mainFolderPath ?>public/js/main.js"></script>
-<script src="<?= $mainFolderPath ?>public/js/ajax_nav.js"></script>
-<script src="<?= $mainFolderPath ?>public/js/admin.js"></script>
+<script src="<?= $mainFolderPath ?>public/js/ajaxNav.js"></script>
+
 
 </body>
 

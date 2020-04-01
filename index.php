@@ -3,29 +3,26 @@ $mainFolderPath = '/cdc/';
 $indexRootPath = $_SERVER['DOCUMENT_ROOT'] . $mainFolderPath;
 
 try {
-
+require('controller/userController.php');
     if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-
-            require('controller/userController.php');
-
         if (isset($_POST['navSection']) && !empty($_POST['navSection'])) {
             
             switch ($_POST['navSection']) {
-                case 'media':
+                case 'Médias':
                     // page media
                     break;
-                case 'contact':
+                case 'Contact':
                     // contact media
                     break;
 
                 default:
-                homePage();
+                indexContent();
             }
+
         } elseif (isset($_POST['userAction']) && !empty($_POST['userAction'])) {
             //post form
         }
     } else {
-        require('controller/userController.php');
         homePage();
     }
 } catch (Exception $error) {

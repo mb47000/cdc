@@ -10,3 +10,9 @@ function homePage()
 
     require($indexRootPath . 'view/user/template.php');
 }
+
+function indexContent()
+{
+    global $indexRootPath;
+    require($indexRootPath . 'view/user/indexView.php');
+}
