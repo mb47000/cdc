@@ -27,12 +27,10 @@ $(function () {
                 success: function (response) {
                     if (response.substr(0, 6) === 'Erreur' || response.substr(0, 6) === '<br />') {
                         displayAlertError(response);
-                        console.log(response)
                     } else {
-                        displayAlertSuccess('Votre message a bien été envoyé ! Merci.');
                         $("#contact").removeClass('was-validated');
                         $("#contact").trigger("reset");
-
+                        displayAlertSuccess('Votre message a bien été envoyé ! Merci.');
                     }
 
                 }

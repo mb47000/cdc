@@ -31,6 +31,15 @@ function mediasContent() {
 
 function contactContent() {
     global $indexRootPath;
+    
     require_once($indexRootPath . 'controller/DataValider.php');
     require($indexRootPath . 'view/user/contactView.php');
+}
+
+function formToMail()
+{
+    $mailStatut = sendMail();
+    if (!$mailStatut) {
+        throw new Exception('une erreur est survenue, mail non envoyé, merci de réessayer');
+    }
 }
